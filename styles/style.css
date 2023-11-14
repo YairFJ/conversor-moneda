@@ -1,0 +1,90 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ebdfcd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 100vh;
+    background-image: url(/images/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: #e4c318;
+    text-shadow: 2px 2px 2px  black;
+}
+
+h2{
+    color: #e45000;
+    text-shadow: 2px 2px 2px  black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.moneda select {
+    font-size: 20px;
+}
+
+.moneda input{
+    font-size: 20px;
+    border: 0;
+    text-align: right;
+}
+
+
+.btn{
+    font-size: 15px;
+    font-style: italic;
+    border-radius: 10px;
+    background-color: #e4c318;
+    color: aliceblue;
+    padding: 3px;
+    border: 2px solid #e4c318;
+    box-shadow: 2px 2px 2px  black;
+    cursor: pointer;
+}
+
+.taza-cambio-container{
+    display: flex;
+    justify-content: space-between;
+    font-weight:bold;
+    text-shadow: 1px 1px 1px black;
+    color: #e45000;
+}
+
+@media (max-width:600px) {
+    .moneda input, img{
+        width: 200px;
+    }
+}
+
+@media (max-width:750px) {
+    h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:750px) {
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+}
